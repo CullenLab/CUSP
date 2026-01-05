@@ -11,7 +11,12 @@ You can access the published paper here:
 
 
 ## Example Usage
-To run the CUSP complex spike sorting on your data, you can use the provided Jupyter notebook `run_CSsort.ipynb`. This notebook demonstrates how to set up the parameters, load data (e.g., channel*sample .bin file with `int16` type), and execute the sorting algorithm.
+Once you have downloaded the repository, navigate to the directory and run the following command to install the package:
+
+```bash
+pip install .
+```
+You can start with example in `/examples/ex_run_CUSP.ipynb`. This Jupyter notebook demonstrates how to set up the parameters, load data (e.g., channel*sample .bin file with `int16` type), and run CUSP complex spike sorter.
 
 ## Dataset
 
