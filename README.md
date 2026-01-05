@@ -1,4 +1,8 @@
 # CUSP
+
+![CUSP_thumbnail](./docs/CUSP_thumbnail.png)
+
+
 [![Status](https://img.shields.io/badge/Status-Published-success.svg)](#citation)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md) 
 
