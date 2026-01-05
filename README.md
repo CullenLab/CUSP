@@ -1,7 +1,5 @@
 # CUSP
-
-![CUSP_thumbnail](./docs/CUSP_thumbnail.png)
-
+<img src="./docs/CUSP_thumbnail.png" alt="drawing" width="200"/>
 
 [![Status](https://img.shields.io/badge/Status-Published-success.svg)](#citation)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md) 
