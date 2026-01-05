@@ -12,10 +12,10 @@ from tqdm import tqdm
 import umap
 
 # local import
-from model import *
+from CUSP.model import *
 
 
-class CSsort():
+class CUSP_pipeline():
     def __init__(self,params):
         self.fs = params['fs']
         self.fs_ms = params['fs_ms']

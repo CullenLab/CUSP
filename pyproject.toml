@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cusp"
+version = "0.1.0"
+description = 'CUSP: Complex Spike Sorting from Multi-electrode Array Recordings with U-net Sequence-to-Sequence Prediction'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Chenhao Bao", email = "cbao5@jhu.edu" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "h5py",
+  "matplotlib",
+  "numpy",
+  "scikit_learn",
+  "scipy",
+  "torch >= 2.0.0",
+  "tqdm",
+  "umap_learn",
+]
+
+[project.urls]
+Documentation = "https://github.com/CullenLab/CUSP#readme"
+Issues = "https://github.com/CullenLab/CUSP/issues"
+Source = "https://github.com/CullenLab/CUSP"
+
+[tool.hatch.version]
+path = "src/cusp/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/cusp tests}"
+
+[tool.coverage.run]
+source_pkgs = ["cusp", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/cusp/__about__.py",
+]
+
+[tool.coverage.paths]
+cusp = ["src/cusp", "*/cusp/src/cusp"]
+tests = ["tests", "*/cusp/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

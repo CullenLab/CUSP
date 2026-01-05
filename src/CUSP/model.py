@@ -136,7 +136,7 @@ class Up_SelfAttention2D(nn.Module):
 
         return attended_values.view(B,self.out_channels,n_channel_up,n_time_up)
 
-# CUSP model
+# CUSP full model
 class Unet_CSDetect_SingleOutput(nn.Module):
     def __init__(self):
         super(Unet_CSDetect_SingleOutput, self).__init__()
