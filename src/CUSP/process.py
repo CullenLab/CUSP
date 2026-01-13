@@ -32,7 +32,7 @@ class CUSP_pipeline():
         self.CS_peak_sign = params['CS_peak_sign']
         self.CS_detect_threshold_quantile = params['CS_detect_threshold_quantile']
 
-        self.channel_range = params['channel_range']
+        # self.channel_range = params['channel_range']
         self.lfp_filt_order = params['lfp_filt_order']
         self.lfp_filt_band = params['lfp_filt_band']
         self.ap_filt_order = params['ap_filt_order']
